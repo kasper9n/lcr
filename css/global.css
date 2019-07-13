@@ -1,0 +1,222 @@
+div.bg {
+  width: 100%;
+  height: 100%;
+  z-index: -8;
+  position: fixed; }
+
+img.bg {
+  min-width: 110%;
+  min-height: 110%;
+  z-index: -9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(30px); }
+  @media (max-width: 1500px) {
+    img.bg {
+      min-width: 115%;
+      min-height: 115%; } }
+  @media (max-width: 1250px) {
+    img.bg {
+      min-width: 120%;
+      min-height: 120%; } }
+  @media (max-width: 800px) {
+    img.bg {
+      min-width: 130%;
+      min-height: 130%; } }
+
+html body {
+  margin: 0px;
+  width: 100%;
+  height: 100%; }
+html a {
+  color: black;
+  text-decoration: none; }
+html p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto; }
+
+main.track-page div.wrapper {
+  width: 100%;
+  max-width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  main.track-page div.wrapper section.info {
+    height: 250px;
+    display: flex; }
+    main.track-page div.wrapper section.info div.cover-wrapper {
+      margin-left: 10px;
+      display: block;
+      width: 250px;
+      height: 250px; }
+      main.track-page div.wrapper section.info div.cover-wrapper .cover {
+        width: 250px;
+        height: 250px;
+        display: block;
+        position: absolute;
+        transition: transform 100ms ease-out, opacity 100ms ease-out; }
+      main.track-page div.wrapper section.info div.cover-wrapper img.cover {
+        overflow: hidden; }
+      main.track-page div.wrapper section.info div.cover-wrapper div.darken {
+        background-color: #000000;
+        opacity: 0; }
+      main.track-page div.wrapper section.info div.cover-wrapper div.play-button {
+        background-image: url("/img/play.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80px;
+        opacity: 0; }
+      main.track-page div.wrapper section.info div.cover-wrapper div.idkbro {
+        width: 250px;
+        height: 250px;
+        z-index: -1; }
+      main.track-page div.wrapper section.info div.cover-wrapper:hover div.darken {
+        opacity: 0.2; }
+      main.track-page div.wrapper section.info div.cover-wrapper:hover div.play-button {
+        opacity: 0.75; }
+    main.track-page div.wrapper section.info div.info-card {
+      color: #FFFFFF;
+      width: 100%;
+      max-height: 250px;
+      margin: 0px 10px; }
+      main.track-page div.wrapper section.info div.info-card div.title {
+        display: flex; }
+        main.track-page div.wrapper section.info div.info-card div.title p.title {
+          border-top-right-radius: 3px;
+          width: 100%;
+          font-size: 20px;
+          padding: 10px 0px;
+          background-color: rgba(255, 255, 255, 0.05); }
+        main.track-page div.wrapper section.info div.info-card div.title p.catalog-id {
+          border-top-right-radius: 3px;
+          padding: 13px 10px;
+          font-size: 15px;
+          color: #CCCCCC;
+          background-color: rgba(255, 255, 255, 0.1); }
+      main.track-page div.wrapper section.info div.info-card div.tempbg {
+        width: 100%;
+        height: 206px;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-bottom-right-radius: 3px; }
+  main.track-page div.wrapper section.cards {
+    display: flex;
+    justify-content: space-between; }
+    main.track-page div.wrapper section.cards a {
+      width: 100%;
+      max-width: 250px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 100ms ease-out; }
+      main.track-page div.wrapper section.cards a div.card {
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 100%;
+        max-width: 250px;
+        height: 100px;
+        transition: height 200ms;
+        border-radius: 3px; }
+        @media (max-height: 400px) {
+          main.track-page div.wrapper section.cards a div.card {
+            height: 80px; } }
+        @media (max-width: 700px) {
+          main.track-page div.wrapper section.cards a div.card {
+            height: 80px; } }
+        main.track-page div.wrapper section.cards a div.card .icon {
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%; }
+      main.track-page div.wrapper section.cards a:hover {
+        background-color: rgba(255, 255, 255, 0.5); }
+      main.track-page div.wrapper section.cards a div.freedownload .icon {
+        background-image: url("/img/freedownload-icon.png"); }
+      main.track-page div.wrapper section.cards a div.soundcloud .icon {
+        background-image: url("/img/soundcloud-icon.png"); }
+      main.track-page div.wrapper section.cards a div.youtube .icon {
+        background-image: url("/img/youtube-icon.png"); }
+      main.track-page div.wrapper section.cards a div.spotify .icon {
+        background-image: url("/img/spotify-icon.png"); }
+      main.track-page div.wrapper section.cards a div.share .icon {
+        background-image: url("/img/share.png"); }
+    main.track-page div.wrapper section.cards div.share-box {
+      position: absolute; }
+
+main.adminpage div.bahaada {
+  display: flex;
+  justify-content: center; }
+main.adminpage form {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 7px;
+  margin-bottom: 7px; }
+  main.adminpage form.upload-form {
+    margin-top: 23px; }
+  main.adminpage form input {
+    padding: 8px 5px;
+    font-size: 15px;
+    margin: 0px;
+    border: none;
+    color: white; }
+    main.adminpage form input:focus {
+      outline: none; }
+  main.adminpage form div.links-toggle {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    position: fixed;
+    transform: translateX(-34px);
+    background-color: rgba(153, 153, 153, 0.2);
+    background-image: url("/img/chevron-down.png"); }
+    main.adminpage form div.links-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+  main.adminpage form div.track-info {
+    display: flex; }
+    main.adminpage form div.track-info input[name="catalog_id"], main.adminpage form div.track-info input[name="cover_art_filename"] {
+      width: 80px;
+      text-align: center;
+      background-color: rgba(153, 153, 153, 0.2); }
+    main.adminpage form div.track-info input[name="artist"], main.adminpage form div.track-info input[name="title"] {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.2); }
+      main.adminpage form div.track-info input[name="artist"]:focus, main.adminpage form div.track-info input[name="title"]:focus {
+        background-color: rgba(204, 204, 204, 0.2); }
+    main.adminpage form div.track-info input[name="submit_tracks_edit"] {
+      cursor: pointer;
+      background-color: rgba(119, 196, 255, 0.3); }
+      main.adminpage form div.track-info input[name="submit_tracks_edit"]:hover {
+        background-color: rgba(0, 144, 255, 0.5); }
+    main.adminpage form div.track-info input[name="submit_tracks_delete"] {
+      cursor: pointer;
+      background-color: rgba(255, 121, 121, 0.3); }
+      main.adminpage form div.track-info input[name="submit_tracks_delete"]:hover {
+        background-color: rgba(255, 0, 0, 0.5); }
+    main.adminpage form div.track-info input[name="submit_tracks_add"] {
+      cursor: pointer;
+      background-color: rgba(122, 255, 124, 0.3);
+      padding: 0px 32.5px; }
+      main.adminpage form div.track-info input[name="submit_tracks_add"]:hover {
+        background-color: rgba(0, 255, 3, 0.5); }
+  main.adminpage form div.track-links {
+    display: flex;
+    flex-wrap: wrap; }
+    main.adminpage form div.track-links input {
+      color: #FFFFFF; }
+      main.adminpage form div.track-links input[name="soundcloud_link"] {
+        width: 100%;
+        background-color: rgba(255, 176, 0, 0.5);
+        font-size: 13px; }
+      main.adminpage form div.track-links input[name="youtube_link"] {
+        width: 100%;
+        background-color: rgba(249, 15, 15, 0.5);
+        font-size: 13px; }
+      main.adminpage form div.track-links input[name="spotify_link"] {
+        width: 100%;
+        background-color: rgba(106, 250, 89, 0.5);
+        font-size: 13px; }
+
+/*# sourceMappingURL=global.css.map */
